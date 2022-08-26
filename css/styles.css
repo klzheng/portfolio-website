@@ -13,7 +13,7 @@ body {
   background-image: url("../images/background.svg");
   margin: 0 auto;
   max-width: 1000px;
-  width: 70%;
+  width: 75%;
   min-width: 350px;
 }
 
@@ -34,10 +34,7 @@ a {
 
 
 
-
-
-
-/* Nav-bar */
+/* NAV-BAR */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -99,9 +96,7 @@ a {
 
 
 
-
-
-/* Intro */
+/* INTRO */
 .intro {
   margin-top: 150px;
   margin-bottom: 50px;
@@ -188,7 +183,7 @@ a {
 
 
 
-/* Tech Stack */
+/* TECH STACK */
 .tech-stack-section {
   display: flex;
   position: relative;
@@ -289,8 +284,7 @@ a {
 
 
 
-
-/* Contact */
+/* CONTACT */
 .contact {
   margin: 50px 0;
   display: flex;
@@ -326,8 +320,6 @@ a {
   display: flex;
   justify-content: end;
 }
-
-
 
 .contact-nav-item {
   color:rgba(149, 159, 170, 0.856)
@@ -366,8 +358,7 @@ a {
   }
 }
 
-
-/* Footer */
+/* FOOTER */
 .footer {
   margin: 10px;
   display: flex;
@@ -378,11 +369,29 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********** PROJECT PAGE **********/
 
-/* Projects */
+/* PROJECTS */
 .project {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   grid-gap: 50px;
@@ -393,43 +402,94 @@ a {
   text-align: center;
 }
 
-.project div {
+.project-container {
+  position: relative;
+  width: 100%;
   border: 1px solid white;
   max-height: 300px;
   max-width: 500px;
   border-radius: 10px;
   text-align: center;
+  background-color: black;
 }
 
-.project div img {
+.project-image {
+  transition: .5s ease;
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.project div img:hover {
-  filter: brightness(50%);
+.project-middle {
+  transition: .5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
-@media (max-width: 900px) {
+.project-details {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project-stacks {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  opacity: 1;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-stacks > span {
+  margin: 2px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 3px;
+  background-color: black;
+}
+
+.project-container:hover .project-image {
+  opacity: .3;
+}
+.project-container:hover .project-middle {
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
   .project {
     grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    zoom: 120%;
   }
   .project div {
-    max-width: 700px;
+    margin: 0 auto;
   }
 }
 
 
-/* Experience */
+
+
+/* EXPERIENCE */
 .work {
   margin: 50px 0;
 }
 
 
 
-/* Skills */
+/* SKILLS */
 .skills {
   margin: 50px 0;
 }
@@ -441,8 +501,7 @@ a {
 
 
 
-
-/* Contact */
+/* CONTACT */
 .contact-nav-home {
   margin: 0;
   display: flex;
