@@ -1,173 +1,277 @@
-
-/********************* TAG SELECTORS *********************/
-
-a {
-  color: #11999E;
+html {
+  scroll-behavior: smooth;
 }
 
-a:link {
-  text-decoration: none;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  text-align: center;
-  font-family: 'Sawarabi Mincho', serif;
+  font-family: Fira Code, serif;
+  background-color: black;
+  color: rgba(149, 159, 170, 0.856);
+  background-image: url("../images/background.svg");
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 70%;
+  min-width: 350px;
 }
 
-h1 {
-  color: #66BFBF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  margin: 50px ;
+hr{
+  border-top: none;
+  border-color:rgb(224, 227, 231)
 }
 
-h2 {
-  color: #66BFBF;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-h3 {
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-h4 {
-  color: #11999E;
-  font-family: 'Montserrat', sans-serif;
+h1, h2, h3, h4 {
+  color: white;
   font-weight: normal;
 }
 
-hr {
-    border-color: #7A86B6;
-    border-style: none;
-    border-top-style: dotted;
-    border-width: 7px;
-    width: 5%;
-    margin: 100px auto 70px auto;
-    opacity: 0.3;
-}
-
-/********************* CLASS SELECTORS **********************/
-
-.about-me{
-  text-align: center;
-  margin: 50px 120px 30px 120px;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.95rem;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 29%;
-  bottom: 40%;
-}
-
-.bottom-container {
-  background-color: #EAF6F6;
-  padding: 40px 50px 25px 50px;
-}
-
-.btn {
-  border-radius: 8px;
-  box-shadow: 1px 1px 5px #666666;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 15px;
-  background: #3498db;
-  padding: 10px 15px 10px 15px;
-}
-
-.btn:hover {
-  background: #3cb0fd;
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+a {
   text-decoration: none;
+  color: white;
 }
 
-.contact-me {
-  margin: 50px 50px 80px;
+
+
+
+
+
+/* Nav-bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 40px;
+  background-color: rgb(19, 22, 22);
+  border: 1px solid rgba(255, 255, 255, 0.329);
+  width: 100% ;
 }
 
-.container-1 {
-  background-color: #D3CEDF;
+.nav div {
+  display: flex;
+  align-items: center;
 }
 
-.container-2 {
-  background-color: #FFE6E6;
+.nav-btn {
+  background: none;
+  font-family: Fira Code, serif;
+  font-size: 14px;
+  border: none;
+  color: rgba(149, 159, 170, 0.856);
+  border-radius: 5px;
+  padding: 0 25px;
+  margin: 4px 2px
 }
 
-.footer-copyright {
+.toggle-light-img {
+  display: flex;
+  filter: invert(1);
+  width: 30px;
+  object-fit: contain;
+  margin-left: 12px;
+}
+
+.icon {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+
+
+
+
+
+/* Intro */
+.intro {
+  margin-top: 150px;
+  line-height: 2rem;
+}
+
+.intro p:nth-child(2) {
+  font-size: 40px;
   margin: 0;
-  padding: 30px 0 20px 0;
-  font-size: .75rem;
 }
 
-.footer-link {
-  margin: 25px;
-  font-family: 'Montserrat', sans-serif;
+.intro > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
 }
 
-.h1-work {
-  margin: 0;
-  padding: 50px;
+.intro button {
+  color:rgba(149, 159, 170, 0.856);
+  font-family: Fira Code;
+  background: none;
+  border: 1px solid;
+  padding: 5px 15px;
+  border-radius: 60px;
 }
 
-.h1-about {
-  padding: 0 50px;
-  margin: 0 50px 50px 50px;
+.icon-lg {
+  font-size: 30px;
 }
 
-.image-1{
-  width: 150px;
-  float: left;
-  margin-right: 30px;
-}
 
-.image-2{
-  width: 150px;
-  float: right;
-  margin-left: 30px;
-}
 
-.mountain{
+
+
+
+
+
+/* Tech Stack */
+.tech-stack-section {
+  display: flex;
   position: relative;
-  top: 5px;
+  min-height: 500px;
+  margin-top: 40px;
 }
 
-.my-work {
-  background-color: #EAF6F6;
-
-}
-
-.profile{
-  padding: 50px;
-  background-color: #EAF6F6;
-  color: #11999E;
-}
-
-.profile-picture {
-  width: 200px;
-}
-
-.skill-row {
-  position: relative;
-  left: 20%;
-  margin: 100px 50px 175px 50px;
-  width: 50%;
+.tech-header {
   text-align: left;
 }
 
-.top-cloud {
+.outer-circle  {
+  width: 360px;
+  height: 360px;
   position: absolute;
-  right: 30%;
-  top: 15%;
+  top: 0; bottom:0; left:0;right:0;
+  margin: auto;
 }
 
-.top-container {
-  background-color: #EAF6F6;
-  padding: 150px 10px 0 10px;
-  position: relative;
+.circle{
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top:0; bottom:0; left:0; right:0;
+  overflow: hidden;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-one{
+  animation: motion-one 30s linear infinite;
+}
+
+.circle-two {
+  animation: motion-two 30s linear infinite;
+}
+
+.circle-three {
+  animation: motion-three 30s linear infinite;
+}
+
+.circle-four {
+  animation: motion-four 30s linear infinite;
+}
+
+.circle-five {
+  animation: motion-five 30s linear infinite;
+}
+
+@keyframes motion-one{
+  0%{
+    transform:rotate(0deg) translate(0, 165px) rotate(0deg);
+  } 
+  100%{
+    transform:rotate(360deg) translate(0, 165px) rotate(-360deg);
+  }
+}
+  
+@keyframes motion-two{
+  0%{
+    transform:rotate(0deg) translate(157px, 51px) rotate(0deg);
+  } 
+  100%{
+    transform:rotate(360deg) translate(157px, 51px) rotate(-360deg);
+  }
+}
+
+@keyframes motion-three{
+  0%{
+    transform:rotate(0deg) translate(97px, -133.5px) rotate(0deg);
+  } 
+  100%{
+    transform:rotate(360deg) translate(97px, -133.5px) rotate(-360deg);
+  }
+}
+
+@keyframes motion-four{
+  0%{
+    transform:rotate(0deg) translate(-97px, -133.5px) rotate(0deg);
+  } 
+  100%{
+    transform:rotate(360deg) translate(-97px, -133.5px) rotate(-360deg);
+  }
+}
+
+@keyframes motion-five{
+  0%{
+    transform:rotate(0deg) translate(-157px, 51px) rotate(0deg);
+  } 
+  100%{
+    transform:rotate(360deg) translate(-157px, 51px) rotate(-360deg);
+  }
+}
+
+
+
+
+/* Contact */
+.contact {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h3 {
+  margin-bottom: 0;
+}
+
+.contact p {
+  margin-bottom: 50px;
+}
+
+.contact a {
+  padding: 0 10px;
+}
+
+.contact-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.contact-nav * {
+  margin: 10px 0;
+}
+
+.contact-nav-item {
+  color:rgba(149, 159, 170, 0.856)
+}
+
+@media (max-width: 550px) {
+  body {
+    zoom: 80%;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+/* Footer */
+.footer {
+  margin: 10px;
+  display: flex;
+  justify-content: center;;
 }
