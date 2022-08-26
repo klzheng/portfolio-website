@@ -327,6 +327,8 @@ a {
   justify-content: end;
 }
 
+
+
 .contact-nav-item {
   color:rgba(149, 159, 170, 0.856)
 }
@@ -370,4 +372,79 @@ a {
   margin: 10px;
   display: flex;
   justify-content: center;;
+}
+
+
+
+
+
+/********** PROJECT PAGE **********/
+
+/* Projects */
+.project {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.project-header {
+  margin: 150px auto 50px auto;
+  text-align: center;
+}
+
+.project div {
+  border: 1px solid white;
+  max-height: 300px;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project div img:hover {
+  filter: brightness(50%);
+}
+
+@media (max-width: 900px) {
+  .project {
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+  }
+  .project div {
+    max-width: 700px;
+  }
+}
+
+
+/* Experience */
+.work {
+  margin: 50px 0;
+}
+
+
+
+/* Skills */
+.skills {
+  margin: 50px 0;
+}
+
+.skills li {
+  padding: 10px 0px;
+  margin: 0;
+}
+
+
+
+
+/* Contact */
+.contact-nav-home {
+  margin: 0;
+  display: flex;
+  justify-content: end;
 }
