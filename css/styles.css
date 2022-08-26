@@ -62,16 +62,30 @@ a {
   border: none;
   color: rgba(149, 159, 170, 0.856);
   border-radius: 5px;
-  padding: 0 25px;
+  padding: 15px 25px;
   margin: 4px 2px
 }
 
 .toggle-light-img {
-  display: flex;
+  display: inline;
   filter: invert(1);
   width: 30px;
   object-fit: contain;
   margin-left: 12px;
+}
+
+.light-mode:hover {
+  animation: rotate-transition 1s;
+}
+
+@keyframes rotate-transition {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg);
+    
+  }
 }
 
 .icon {
@@ -79,6 +93,9 @@ a {
   padding: 0 10px;
 }
 
+.highlight:hover {
+  color:white;
+}
 
 
 
@@ -87,7 +104,13 @@ a {
 /* Intro */
 .intro {
   margin-top: 150px;
+  margin-bottom: 50px;
   line-height: 2rem;
+}
+
+.intro-contact {
+  display: flex;
+  align-items: center;
 }
 
 .intro p:nth-child(2) {
@@ -114,10 +137,54 @@ a {
   font-size: 30px;
 }
 
+.rotate {
+  transition: transform .5s ease-in-out;
+}
 
+.rotate:hover {
+  transform: rotate(360deg) scale(1.5);
+}
 
+.bounce {
+  position: relative;
+  top: 0;
+}
 
+.bounce:hover {
+  animation: bouncing 2s infinite;
+}
 
+@keyframes bouncing {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0) scale(1.2);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.2);
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.2);
+  }
+}
+
+.grow {
+  transition: transform .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.35);
+}
+
+.invert {
+  transition: .3s;
+}
+
+.invert:hover {
+  background-color: rgba(255, 255, 255, 0.76);
+  color: black;
+}
 
 
 
@@ -126,11 +193,12 @@ a {
   display: flex;
   position: relative;
   min-height: 500px;
-  margin-top: 40px;
+  margin: 50px 0;
 }
 
 .tech-header {
   text-align: left;
+  margin-top: 0;
 }
 
 .outer-circle  {
@@ -224,7 +292,7 @@ a {
 
 /* Contact */
 .contact {
-  margin: 40px 0;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,9 +321,37 @@ a {
   margin: 10px 0;
 }
 
+.contact-nav p:nth-child(3) {
+  margin: 0;
+  display: flex;
+  justify-content: end;
+}
+
 .contact-nav-item {
   color:rgba(149, 159, 170, 0.856)
 }
+
+.arrow-right {
+  display: flex;
+  align-self: center;
+  margin: 0 50px;
+  height: 15px;
+  background-image: url("../images/right-arrow.svg");
+}
+
+.arrow-move-right {
+  animation: forward .8s infinite alternate;
+}
+
+@keyframes forward {
+  0% {
+    margin-left: -1.5rem;
+  }
+  100% {
+    margin-left: .5rem;
+  }
+}
+
 
 @media (max-width: 550px) {
   body {
