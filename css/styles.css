@@ -94,6 +94,10 @@ a {
   color:white;
 }
 
+.dark {
+  background-color:rgb(19, 22, 22);
+  border: none;
+}
 
 
 /* INTRO */
