@@ -1,0 +1,96 @@
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+}
+
+
+
+/* ROTATING CIRCLE */
+.circle {
+  width: 400px;
+  height: 400px;
+  margin: 80px auto;
+  border: 1px solid #000;
+  display:grid;
+  grid-template-columns:50px;
+  grid-template-rows:50px;
+  place-content: center;
+  border-radius: 50%;
+}
+.item {
+  grid-area:1/1;
+  line-height: 30px;
+  text-align: center;
+  /* border-radius: 50%; */
+  animation: spin var(--d) linear infinite; 
+  transform:rotate(0) translate(200px) rotate(0);
+}
+@keyframes spin {
+  100% {
+    transform:rotate(1turn) translate(200px) rotate(-1turn);
+  }
+}
+
+.item:nth-child(1) {animation-delay:calc(-0*var(--d)/var(--n))}
+.item:nth-child(2) {animation-delay:calc(-1*var(--d)/var(--n))}
+.item:nth-child(3) {animation-delay:calc(-2*var(--d)/var(--n))}
+.item:nth-child(4) {animation-delay:calc(-3*var(--d)/var(--n))}
+.item:nth-child(5) {animation-delay:calc(-4*var(--d)/var(--n))}
+.item:nth-child(6) {animation-delay:calc(-5*var(--d)/var(--n))}
+.item:nth-child(7) {animation-delay:calc(-6*var(--d)/var(--n))}
+.item:nth-child(8) {animation-delay:calc(-7*var(--d)/var(--n))}
+.item:nth-child(9) {animation-delay:calc(-8*var(--d)/var(--n))}
+.item:nth-child(10) {animation-delay:calc(-9*var(--d)/var(--n))}
+.item:nth-child(11) {animation-delay:calc(-10*var(--d)/var(--n))}
+.item:nth-child(12) {animation-delay:calc(-11*var(--d)/var(--n))}
+.item:nth-child(13) {animation-delay:calc(-12*var(--d)/var(--n))}
+
+/* .circle {
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  border: 1px solid #000;
+  display:grid;
+  grid-template-columns:30px;
+  grid-template-rows:30px;
+  place-content: center;
+  border-radius: 50%;
+}
+.item {
+  grid-area:1/1;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #f00;
+  animation: rotate 12s var(--d,0s) linear infinite; 
+  transform:rotate(0) translate(100px) rotate(0);
+}
+@keyframes rotate {
+  100% {
+    transform:rotate(1turn) translate(100px) rotate(-1turn);
+  }
+} */
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: Fira Code, sans-serif;
+  }
+}
