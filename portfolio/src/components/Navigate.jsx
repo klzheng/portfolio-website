@@ -1,10 +1,17 @@
+import { useEffect } from "react"
 import { useState } from "react"
 import { TfiAngleDoubleRight } from "react-icons/tfi"
 import {Link} from "react-router-dom"
 
-export default function Navigate() {
+export default function Navigate(props) {
 
-    const [hoverHome, setHoverHome] = useState(true)
+    const {page} = props
+    const [hoverHome, setHoverHome] = useState({page})
+
+    useEffect(() => {
+        if (page === "/") setHoverHome(true)
+        else if (page === "projects") setHoverHome(false)
+    }, [setHoverHome, page])
 
     return (
         <div className="mb-16 mt-5">

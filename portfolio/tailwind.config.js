@@ -3,6 +3,18 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      brightness: {
+        5: '.05',
+        10: '.1',
+        15: '.15',
+        20: '.20',
+        25: '.25',
+        30: '.30',
+        40: '.40',
+        60: '.60',
+        70: '.70',
+        80: '.80',
+      },
       animation: {
         'spin-ease': 'spin 1s ease-in-out infinite',
         'spin-slowest': 'spin 30s linear infinite',

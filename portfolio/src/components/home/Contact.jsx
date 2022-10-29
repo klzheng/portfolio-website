@@ -2,8 +2,8 @@ import Navigate from "../Navigate";
 
 
 export default function Contact() {
-    return (
 
+    return (
         <section className="mt-20">
 
             <div className="flex flex-col items-center">
@@ -43,7 +43,7 @@ export default function Contact() {
                 </a>
             </div>
 
-            <Navigate/>
+            <Navigate />
 
             <hr />
 
