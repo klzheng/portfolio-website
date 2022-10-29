@@ -8,10 +8,10 @@ export default function Navbar() {
             </div>
             <div>
                 <ul className="flex space-x-10">
-                    <Link to="/">
+                    <Link to="/" className='hover:text-gray-100 hover:drop-shadow-white-text transition'>
                         HOME
                     </Link>
-                    <Link to="/projects">
+                    <Link to="/projects" className='hover:text-gray-100 transition hover:drop-shadow-white-text'>
                         PROJECTS
                     </Link>
                 </ul>

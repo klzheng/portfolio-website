@@ -23,21 +23,23 @@ export default function TechStack() {
     return (
         <>
             <section className="my-20 flex flex-col items-center">
-                <h1 className="text-2xl text-gray-200 font-semibold">TECH STACKS</h1>
+                <h1 className="text-2xl text-gray-200 font-semibold">
+                    TECH STACK
+                </h1>
                 <RotatingCircle
                     totalItems={8}
-                    duration={"60s"}
-                >
+                    duration={"60s"}>
+
                     <RotatingItem imgPath={"html.png"} />
                     <RotatingItem imgPath={"css.png"} />
                     <RotatingItem imgPath={"js.png"} />
-                    <RotatingItem imgPath={"python.png"} />
-                    <RotatingItem imgPath={"react.png"} />
                     <RotatingItem imgPath={"mongodb.png"} />
-                    <RotatingItem imgPath={"nodejs.png"} />
+                    <RotatingItem imgPath={"react.png"} />
+                    <RotatingItem imgPath={"python.png"} />
                     <RotatingItem imgPath={"tailwind.png"} />
-                </RotatingCircle>
+                    <RotatingItem imgPath={"nodejs.png"} />
 
+                </RotatingCircle>
 
             </section>
             <hr />
