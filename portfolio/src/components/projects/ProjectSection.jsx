@@ -6,35 +6,35 @@ export default function ProjectSection() {
         {
             link: "https://thecinemadb.netlify.app/",
             imgPath: "project6.png",
-            name: "TCDb",
-            description: "All in one movie and TV tracking site that allows you to save, rate, and track your favorite films 🎥",
+            name: "TCDb ",
+            description: "🍿 All in one movie and TV tracking site that allows you to save, rate, and track your favorite films 🎥",
             techStacks: ["React", "TailwindCSS", "NodeJS", "MongoDB"]
         },
         {
             link: "https://klzheng.github.io/weather-app/",
             imgPath: "project5.png",
-            name: "Weather App",
-            description: "Modern and simple weather app ⛱️",
+            name: "Weather App ⛱️",
+            description: "Modern and simple weather app ",
             techStacks: ["Javascript", "HTML", "CSS"]
         },
         {
             link: "https://klzheng.github.io/tenzies-game/",
             imgPath: "project2.png",
-            name: "Tenzies",
-            description: "Fun and simple board game",
+            name: "Tenzies 🎲",
+            description: "Fun and simple board game ",
             techStacks: ["React", "JavaScript", "CSS"]
         },
         {
             link: "https://klzheng.github.io/calculator/",
             imgPath: "project3.png",
             name: "Calculator",
-            description: "Just another calculator app on the web",
+            description: "Just another calculator app on the web ",
             techStacks: ["Javascript", "HTML", "CSS"]
         },
         {
             link: "https://klzheng.github.io/portfolio-website",
             imgPath: "project1.png",
-            name: "Portfolio",
+            name: "📜 Portfolio 💼",
             description: "My personal website",
             techStacks: ["React", "TailwindCSS"]
         },

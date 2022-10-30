@@ -6,9 +6,15 @@ import TechStack from "./TechStack";
 import Contact from "./Contact";
 import Footer from "../Footer";
 import Navigate from "../Navigate";
+import { useEffect } from "react";
 
 
 export default function Home() {
+
+    useEffect(() => {
+        document.title = "Portfolio"
+    },[])
+
     return (
         <Background>
             <Navbar/>
