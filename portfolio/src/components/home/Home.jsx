@@ -5,6 +5,7 @@ import Navbar from "../Navbar";
 import TechStack from "./TechStack";
 import Contact from "./Contact";
 import Footer from "../Footer";
+import Navigate from "../Navigate";
 
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
 
                 <Contact/>
 
+                <Navigate 
+                    page={"home"}/>
                 <Footer />
             </Container>
         </Background>

@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Contact from "../home/Contact";
 import ProjectSection from "./ProjectSection";
 import Footer from "../Footer";
+import Navigate from "../Navigate";
 
 export default function Projects() {
 
@@ -26,10 +27,11 @@ export default function Projects() {
 
                 <Experience />
 
-                <Skills
-                    skills={skills}/>
+                <Skills skills={skills}/>
 
                 <Contact/>
+
+                <Navigate page={"projects"}/>
 
                 <Footer/>
             </Container>

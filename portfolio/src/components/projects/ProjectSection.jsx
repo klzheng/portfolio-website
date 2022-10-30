@@ -7,7 +7,7 @@ export default function ProjectSection() {
             link: "https://thecinemadb.netlify.app/",
             imgPath: "project6.png",
             name: "TCDb",
-            description: "All in one movie and TV tracking site that allows you to save, rate, and track your favorite films",
+            description: "All in one movie and TV tracking site that allows you to save, rate, and track your favorite films 🎥",
             techStacks: ["React", "TailwindCSS", "NodeJS", "MongoDB"]
         },
         {
@@ -51,7 +51,7 @@ export default function ProjectSection() {
     return (
         <>
             <h3 className="text-center text-3xl text-gray-200">Projects!</h3>
-            <div className="grid grid-cols-1 gap-10 pt-12 pb-20 w-3/4 mx-auto">
+            <div className="grid grid-cols-1 gap-10 pt-12 pb-20 xl:w-3/4 2xs:w-full lg:w-5/6 mx-auto">
                 {projects.map((item, index) => (
                     <ProjectItem
                         key={index}

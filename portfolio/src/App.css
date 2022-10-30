@@ -1,74 +1,120 @@
 *::-webkit-scrollbar {
-  width: 6px;
+    width: 6px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #000000;
+    background: #000000;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #5c5c5c;
-  border-radius: 10px;
-  border: 0px solid #ffffff;
+    background-color: #5c5c5c;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
 }
 
 
 
 /* ROTATING CIRCLE */
 .circle {
-  width: 400px;
-  height: 400px;
-  margin: 80px auto;
-  border: 1px solid #000;
-  display:grid;
-  grid-template-columns:50px;
-  grid-template-rows:50px;
-  place-content: center;
-  border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 80px auto;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: 50px;
+    place-content: center;
+    border-radius: 50%;
 }
 
 .item {
-  grid-area:1/1;
-  line-height: 30px;
-  text-align: center;
-  animation: revolve var(--d) linear infinite; 
-  transform:rotate(0) translate(200px) rotate(0);
-}
-@keyframes revolve {
-  100% {
-    transform:rotate(1turn) translate(200px) rotate(-1turn);
-  }
+    grid-area: 1/1;
+    line-height: 30px;
+    text-align: center;
+    animation: revolveSmall var(--d) linear infinite;
+    transform: rotate(0) translate(100px) rotate(0);
 }
 
-.item:nth-child(1) {animation-delay:calc(-0*var(--d)/var(--n))}
-.item:nth-child(2) {animation-delay:calc(-1*var(--d)/var(--n))}
-.item:nth-child(3) {animation-delay:calc(-2*var(--d)/var(--n))}
-.item:nth-child(4) {animation-delay:calc(-3*var(--d)/var(--n))}
-.item:nth-child(5) {animation-delay:calc(-4*var(--d)/var(--n))}
-.item:nth-child(6) {animation-delay:calc(-5*var(--d)/var(--n))}
-.item:nth-child(7) {animation-delay:calc(-6*var(--d)/var(--n))}
-.item:nth-child(8) {animation-delay:calc(-7*var(--d)/var(--n))}
-.item:nth-child(9) {animation-delay:calc(-8*var(--d)/var(--n))}
-.item:nth-child(10) {animation-delay:calc(-9*var(--d)/var(--n))}
-.item:nth-child(11) {animation-delay:calc(-10*var(--d)/var(--n))}
-.item:nth-child(12) {animation-delay:calc(-11*var(--d)/var(--n))}
-.item:nth-child(13) {animation-delay:calc(-12*var(--d)/var(--n))}
+@keyframes revolve {
+    100% {
+        transform: rotate(1turn) translate(200px) rotate(-1turn);
+    }
+}
+
+@keyframes revolveSmall {
+    100% {
+        transform: rotate(1turn) translate(100px) rotate(-1turn);
+    }
+}
+
+.item:nth-child(1) {
+    animation-delay: calc(-0*var(--d)/var(--n))
+}
+
+.item:nth-child(2) {
+    animation-delay: calc(-1*var(--d)/var(--n))
+}
+
+.item:nth-child(3) {
+    animation-delay: calc(-2*var(--d)/var(--n))
+}
+
+.item:nth-child(4) {
+    animation-delay: calc(-3*var(--d)/var(--n))
+}
+
+.item:nth-child(5) {
+    animation-delay: calc(-4*var(--d)/var(--n))
+}
+
+.item:nth-child(6) {
+    animation-delay: calc(-5*var(--d)/var(--n))
+}
+
+.item:nth-child(7) {
+    animation-delay: calc(-6*var(--d)/var(--n))
+}
+
+.item:nth-child(8) {
+    animation-delay: calc(-7*var(--d)/var(--n))
+}
+
+.item:nth-child(9) {
+    animation-delay: calc(-8*var(--d)/var(--n))
+}
+
+.item:nth-child(10) {
+    animation-delay: calc(-9*var(--d)/var(--n))
+}
+
+.item:nth-child(11) {
+    animation-delay: calc(-10*var(--d)/var(--n))
+}
+
+.item:nth-child(12) {
+    animation-delay: calc(-11*var(--d)/var(--n))
+}
+
+.item:nth-child(13) {
+    animation-delay: calc(-12*var(--d)/var(--n))
+}
 
 
 /* SIDEWAYS BOUNCE ANIMATION */
 .bounce-right {
-  position: absolute;
-  margin-right: 150%;
-  animation: forward .8s infinite alternate;
+    position: absolute;
+    margin-right: 150%;
+    animation: forward .8s infinite alternate;
 }
 
 @keyframes forward {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: 50px;
-  }
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 50px;
+    }
 }
 
 
@@ -82,7 +128,19 @@
 
 
 @layer base {
-  html {
-    font-family: Fira Code, sans-serif;
-  }
+    html {
+        font-family: Fira Code, sans-serif;
+    }
+}
+
+
+@media screen and (min-width:480px) {
+    .item {
+        animation: revolve var(--d) linear infinite;
+        transform: rotate(0) translate(200px) rotate(0);
+    }
+    .circle {
+        width: 400px;
+        height: 400px;
+    }
 }
