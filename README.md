@@ -1,10 +1,6 @@
-
 <a  name="readme-top"></a>
 
-
-
 <!-- PROJECT LOGO -->
-<br />
 <div  align="center">
     <a  href="https://klzheng.github.io/portfolio-website/index.html" target="_blank"><h1  align="center">Portfolio!</h1></a>
 </div>
