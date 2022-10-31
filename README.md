@@ -2,7 +2,7 @@
 
 <!-- PROJECT LOGO -->
 <div  align="center">
-    <a  href="https://klzheng.github.io/portfolio-website/index.html" target="_blank"><h1  align="center">Portfolio!</h1></a>
+    <a  href="https://klzheng-portfolio.netlify.app/" target="_blank"><h1  align="center">Portfolio!</h1></a>
 </div>
 
 <p align="center">
@@ -30,7 +30,7 @@
 
 <br/>
 
-<p> Click <a href="https://klzheng.github.io/portfolio-website/" target="_blank">here</a> to get redirected</p>
+<p> Click <a href="https://klzheng-portfolio.netlify.app/" target="_blank">here</a> to get redirected</p>
 
 <br/>
 
