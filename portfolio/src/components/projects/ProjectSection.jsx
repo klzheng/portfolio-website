@@ -11,11 +11,11 @@ export default function ProjectSection() {
             techStacks: ["React", "TailwindCSS", "NodeJS", "MongoDB"]
         },
         {
-            link: "https://klzheng.github.io/weather-app/",
+            link: "https://klzheng-weather.netlify.app/",
             imgPath: "project5.png",
             name: "Weather App ⛱️",
             description: "Modern and simple weather app ",
-            techStacks: ["Javascript", "HTML", "CSS"]
+            techStacks: ["React", "TailwindCSS"]
         },
         {
             link: "https://klzheng.github.io/tenzies-game/",
@@ -32,7 +32,7 @@ export default function ProjectSection() {
             techStacks: ["Javascript", "HTML", "CSS"]
         },
         {
-            link: "https://klzheng.github.io/portfolio-website",
+            link: "https://klzheng-portfolio.netlify.app/",
             imgPath: "project1.png",
             name: "📜 Portfolio 💼",
             description: "My personal website",
