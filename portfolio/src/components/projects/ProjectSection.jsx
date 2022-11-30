@@ -4,6 +4,13 @@ export default function ProjectSection() {
 
     const projects = [
         {
+            link: "https://reliant-gis.netlify.app/",
+            imgPath: "project7.png",
+            name: "ReliantGIS ",
+            description: "📊 Go-to source for income and demographics data in the US 🌎",
+            techStacks: ["React", "Javascript"]
+        },
+        {
             link: "https://thecinemadb.netlify.app/",
             imgPath: "project6.png",
             name: "TCDb ",
