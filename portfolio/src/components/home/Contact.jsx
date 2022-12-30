@@ -11,7 +11,7 @@ export default function Contact() {
             </div>
 
 
-            <div className="2xs:text-xl sm:text-2xl flex flex-col items-center space-y-4 py-10 mt-5 transition-all">
+            <div className="2xs:text-xl sm:text-2xl flex flex-col items-center space-y-5 py-10 mt-5 transition-all">
                 <a
                     href="https://github.com/klzheng"
                     target="_blank"
@@ -21,6 +21,17 @@ export default function Contact() {
                     <i className="fa-brands fa-github hover:animate-spin-ease"></i>
                     <span className="2xs:text-sm sm:text-base">
                         github.com/klzheng
+                    </span>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/klzheng/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center space-x-2 hover:text-gray-200 hover:scale-110 transition-all "
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span className="2xs:text-sm sm:text-base">
+                        linkedin.com/in/klzheng
                     </span>
                 </a>
                 <p className="flex items-center space-x-2 hover:text-gray-200 hover:scale-110 transition-all">
