@@ -30,14 +30,14 @@ export default function TechStack() {
                     totalItems={8}
                     duration={"60s"}>
 
-                    <RotatingItem imgPath={"html.png"} />
-                    <RotatingItem imgPath={"css.png"} />
+                    <RotatingItem imgPath={"jquery.png"} />
                     <RotatingItem imgPath={"js.png"} />
-                    <RotatingItem imgPath={"mongodb.png"} />
+                    <RotatingItem imgPath={"sqldeveloper.png"} />
                     <RotatingItem imgPath={"react.png"} />
                     <RotatingItem imgPath={"python.png"} />
-                    <RotatingItem imgPath={"tailwind.png"} />
                     <RotatingItem imgPath={"nodejs.png"} />
+                    <RotatingItem imgPath={"csharp.png"} />
+                    <RotatingItem imgPath={"dotnetcore.png"} />
 
                 </RotatingCircle>
 
