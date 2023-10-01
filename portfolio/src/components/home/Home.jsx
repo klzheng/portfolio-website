@@ -22,8 +22,8 @@ export default function Home() {
 
                 <Bio 
                     name={"Kevin"}
-                    role={"Fullstack Developer"}/>
-
+                    role={"Software Engineer"}/>
+                    
                 <TechStack/>
 
                 <Contact/>

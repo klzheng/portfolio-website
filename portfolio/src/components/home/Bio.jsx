@@ -8,16 +8,17 @@ export default function Bio(props) {
 
             <p>Hi, my name is</p>
             <p className="text-5xl drop-shadow-white-text text-gray-300 ">{name}</p>
-            <p>I'm a {role}.</p>
-            <p >
-                I create web applications that are both interesting and useful. I am always looking to grow and to be continuously learning and challenging myself. Check out some of my most recent projects and let me know what you think!
+            <p>I'm a <span className="text-2xl text-gray-300">{role}</span>.</p><br/>
+            <p>
+                Currently developing code for the <a href="https://www.nasa.gov/international-space-station/" target="_blank" rel="noreferrer" className="text-2xl"> ISS</a> at 
+                <a href="https://www.boeing.com/space/international-space-station/" target="_blank" rel="noreferrer"> <span className="text-3xl text-gray-300">Boeing!</span></a>
             </p>
-            <p className="pb-16">
-                Currently learning, developing, and improving my skills on both front-end and back-end technologies.
+            <p>
+                And working on <a href="https://github.com/ProductifyOrg/productify" target="_blank" rel="noreferrer"><span className="text-2xl text-gray-300">Productify</span></a>, 
+                a mobile app that aims to boost productivity for those with learning disabilities! 
             </p>
+            <br/><br/>
 
-            {/* GITHUB / EMAIL */}
-       
             <hr />
 
         </section>
