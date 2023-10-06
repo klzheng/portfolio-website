@@ -52,9 +52,6 @@ export default function Contact() {
                     </span>
                 </a>
             </div>
-
-
-
         </section>
     )
 }

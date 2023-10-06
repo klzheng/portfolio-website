@@ -2,7 +2,6 @@ import Background from "../Background";
 import Container from "../Container";
 import Navbar from "../Navbar";
 import Experience from "./Experience";
-import Skills from "./Skills";
 import Contact from "../home/Contact";
 import ProjectSection from "./ProjectSection";
 import Footer from "../Footer";
@@ -10,15 +9,6 @@ import Navigate from "../Navigate";
 import { useEffect } from "react";
 
 export default function Projects() {
-
-    const skills = [
-        "Strong Work Ethic",
-        "Teamwork & Collaboration",
-        "Growth-oriented Mindset",
-        "Leadership abilities",
-        "Effective Communication",
-        "Resourceful"
-    ]
 
     useEffect(() => {
         document.title = "Projects"
@@ -31,8 +21,6 @@ export default function Projects() {
                 <ProjectSection />
 
                 <Experience />
-
-                <Skills skills={skills}/>
 
                 <Contact/>
 
