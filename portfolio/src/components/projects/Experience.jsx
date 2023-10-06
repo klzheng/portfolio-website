@@ -1,7 +1,7 @@
 export default function Experience() {
     return (
         <>
-            <div className="my-14">
+            <div className="my-20">
                 <h2 className="sm:text-3xl 2xs:text-xl  text-gray-200 text-center mb-14">
                     Experience
                 </h2>
