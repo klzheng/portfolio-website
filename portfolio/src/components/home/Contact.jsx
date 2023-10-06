@@ -29,7 +29,7 @@ export default function Contact() {
                     rel="noreferrer"
                     className="flex items-center space-x-2 hover:text-gray-200 hover:scale-110 transition-all "
                 >
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i className="fa-brands fa-linkedin"></i>
                     <span className="2xs:text-sm sm:text-base">
                         linkedin.com/in/klzheng
                     </span>

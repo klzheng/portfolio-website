@@ -9,8 +9,8 @@ export default function Navigate(props) {
     const [hoverHome, setHoverHome] = useState("")
 
     useEffect(() => {
-        if (page === "home") setHoverHome(false)
-        else if (page === "projects") setHoverHome(true)
+        if (page === "home") setHoverHome(true)
+        else if (page === "projects") setHoverHome(false)
     }, [setHoverHome, page])
 
     return (
@@ -24,7 +24,7 @@ export default function Navigate(props) {
                                 className="text-gray-400 text-2xl bounce-right" />}
                         <Link
                             to="/"
-                            onClick={() => setHoverHome(false)}
+                            onClick={() => setHoverHome(true)}
                             className="hover:text-gray-200 hover:scale-110 transition-all">
                             home
                         </Link>
@@ -35,7 +35,7 @@ export default function Navigate(props) {
                                 className="text-gray-400 text-2xl bounce-right" />}
                         <Link
                             to="/projects"
-                            onClick={() => setHoverHome(true)}
+                            onClick={() => setHoverHome(false)}
                             className="hover:text-gray-200 hover:scale-110 transition-all">
                             projects
                         </Link>
